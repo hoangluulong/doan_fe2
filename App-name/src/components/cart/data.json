@@ -1,0 +1,36 @@
+{
+    "products":[
+        {
+            "_id" : "ip11",
+            "title" : "Iphone 11",
+            "image": "/images/iphone11.jpg",
+            "description" : "Iphone 11, trong đó phiên bản iPhone 11 64GB có mức giá rẻ nhất nhưng vẫn được nâng cấp mạnh mẽ như iPhone Xr ra mắt trước đó.",
+            "price": "20",
+            "category": ["Iphone"]
+        },
+        {
+            "_id" : "sam1",
+            "title" : "Samsung Galaxy Note 20U",
+            "image": "/images/sam1.jpg",
+            "description" : "Sau Galaxy Note 20 thì Galaxy Note 20 Ultra là phiên bản tiếp theo cao cấp hơn thuộc dòng Note 20 Series của Samsung, với nhiều thay đổi, từ cụm camera hỗ trợ lấy nét laser AF cùng ống kính góc rộng mới, màn hình tràn viền lên đến 6.9 inch.",
+            "price": "20",
+            "category": ["Samsung"]
+        },
+        {
+            "_id" : "oppo1",
+            "title" : "OPPO Find X3 Pro 5G",
+            "image": "/images/oppo1.jpg",
+            "description" : "OPPO đã làm khuynh đảo thị trường smartphone khi cho ra đời chiếc điện thoại OPPO Find X3 Pro 5G. Đây là một sản phẩm có thiết kế độc đáo, sở hữu cụm camera khủng, cấu hình thuộc top đầu trong thế giới Android.",
+            "price": "20",
+            "category": ["Oppo"]
+        },
+        {
+            "_id" : "oppo2",
+            "title" : "OPPO A74",
+            "image": "/images/oppo2.jpg",
+            "description" : "OPPO luôn đa dạng hoá các sản phẩm của mình từ giá rẻ cho đến cao cấp. Trong đó, điện thoại OPPO A74 4G được nằm trong phân khúc tầm trung rất đáng chú ý với nhiều tính năng và smartphone cũng chính là bản nâng cấp của OPPO A73 ra mắt trước đó.",
+            "price": "15",
+            "category": ["Oppo"]
+        }
+    ]
+}

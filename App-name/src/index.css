@@ -1,0 +1,179 @@
+.not-found {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(29, 22, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root{
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(163, 180, 145, 0.842);
+}
+
+body, input, select, textarea {
+  font-size: 1.6rem;
+  font-family: Aria, Helvetica, sans-serif;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header a{
+  color: white;
+}
+
+a:hover{
+  color: red;
+}
+
+main{
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main{
+  flex: 3 60rem;
+}
+
+.sidebar{
+  flex: 1 20rem;
+}
+
+/* Product */
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.products li {
+  flex: 1 1 29rem;
+  height: 47rem;
+  padding: 4rem;
+  background-color: rgba(2, 1, 1, 0.651);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+.product img{
+  width: 250px;
+  height: 300px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price div,
+.product-price button {
+  text-align: center;
+  flex: 1;
+}
+
+.product-price div{
+  font-size: 2rem;
+}
+
+.product a p{
+  text-align: center;
+  font-size: 25px;
+}
+
+.product a{
+  text-decoration: none;
+}
+
+.button-add{
+  margin-left: 30%;
+}
+
+.button-add button{
+  padding: 10px 20px 10px 20px;
+}
+
+.botton{
+  padding: 1rem;
+  border: 0.1rem #ffff;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+.button:hover{
+  border: 0.1rem red solid;
+}
+
+.button.primary{
+  background-color: green;
+  margin-right: 30%;
+}
+
+.table-cart{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 10;
+  opacity: 0;
+  margin-right: 30%;
+  margin-top: 10%;
+  background-color: #3c3cb3;
+}
+
+.table-cart img{
+  width: 40px;
+  height: 40px;
+}
+
+.no-cart{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.btn-danger{
+  padding: 10px;
+}
