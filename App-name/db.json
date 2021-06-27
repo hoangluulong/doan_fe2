@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "sssssssssss",
+      "username": "aaaaaaaaaaaa",
+      "email": "a@gmail.com",
+      "phone": "1111111111111111",
+      "website": "111111111111111",
+      "id": 8
+    },
+    {
+      "name": "Trườngkutebaby",
+      "username": "truong",
+      "email": "truongpx.10.student@fit.tdc.edu.vn",
+      "phone": "0373658707",
+      "website": "Webng",
+      "id": 9
+    },
+    {
+      "name": "hiihi",
+      "username": "dsfdsf",
+      "email": "a@gmail.com",
+      "phone": "dsfsdfsdfsfsd",
+      "id": 10
+    },
+    {
+      "name": "fdsfsdfsd",
+      "username": "hoanghuulong",
+      "email": "fsdfds2@mail.com",
+      "phone": "dsfsdfsdfsfsd",
+      "id": 11
+    }
+  ]
+}
