@@ -17,7 +17,10 @@ import NotFound from "./components/pages/NotFound";
 import AddUser from "./components/users/AddUser";
 import EditUser from "./components/users/EditUser";
 import User from "./components/users/User";
-
+import ProducList from "./components/products/ProductList";
+import AddProducts from "./components/products/AddProducts";
+import EditProduct from "./components/products/EditProduct";
+import DetailProduct from "./components/products/DetailProduct";
 function App(props) {
   return (
     <Router>
@@ -26,11 +29,21 @@ function App(props) {
           <Route exact path="/" component={Home} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/listuser" component={ListUser} />
+        
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/users/add" component={AddUser} />
           <Route exact path="/users/edit/:id" component={EditUser} />
           <Route exact path="/users/:id" component={User} />
+          
+        {/* product */}
+        <Route exact path="/productlist" component={ProducList} />
+        <Route exact path="/products/add" component={AddProducts} />
+          <Route exact path="/products/edit/:id" component={EditProduct} />
+          <Route exact path="/products/:id" component={DetailProduct} />
+
+
+          {/* page found */}
           <Route component={NotFound} />
         </Switch>
         </div>

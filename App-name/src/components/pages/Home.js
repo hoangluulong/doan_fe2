@@ -82,7 +82,7 @@ class Home extends Component {
                                 </li>
                             </ul>
                         </div>
-
+                        <Link className="btn btn-outline-light" to="/productlist">List user</Link>
                         <Link className="btn btn-outline-light" to="/listuser">List user</Link>
                         <Link className="btn btn-outline-light" to="/users/add">Add User</Link>
                         <button className="btn btn-outline-light" onClick={shoot}> Cart ({this.state.cartItems.length})</button>
