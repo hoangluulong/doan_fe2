@@ -42,6 +42,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <Cart cartCartItem={this.state.cartItems} removeCart={this.removeCart}></Cart>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                     <div className="container">
                         <Link className="navbar-brand" href="/">
@@ -77,23 +78,25 @@ class Home extends Component {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    
+
                                 </li>
                             </ul>
                         </div>
 
                         <Link className="btn btn-outline-light" to="/listuser">List user</Link>
                         <Link className="btn btn-outline-light" to="/users/add">Add User</Link>
+                        <button className="btn btn-outline-light" onClick={shoot}> Cart ({this.state.cartItems.length})</button>
+
                     </div>
                 </nav>
-                <Cart cartCartItem={this.state.cartItems} removeCart={this.removeCart}></Cart>
-                                    <div>Cart = {this.state.cartItems.length}
-                                    </div>
-                                    <button className="btnCart" onClick={shoot}>Cart</button>
-                <div className="content">
-                    <div className="main">
-                        <Products product={this.state.products} addToCart={this.addToCart}></Products>
+
+                <div className="container">
+                    <div className="content">
+                        <div className="main">
+                            <Products product={this.state.products} addToCart={this.addToCart}></Products>
+                        </div>
                     </div>
+
                 </div>
             </div>
         );

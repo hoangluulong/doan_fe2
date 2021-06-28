@@ -22,8 +22,6 @@ function App(props) {
   return (
     <Router>
       <div className="App">
-        
-        <div className="container">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/cart" component={Cart} />
@@ -36,7 +34,7 @@ function App(props) {
           <Route component={NotFound} />
         </Switch>
         </div>
-      </div>
+
     </Router>
   );
 }
