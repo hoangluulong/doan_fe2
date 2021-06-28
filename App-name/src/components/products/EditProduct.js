@@ -2,48 +2,50 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
 
-const EditUser = () => {
+const EditProduct = () => {
   let history = useHistory();
   const { id } = useParams();
-  const [user, setUser] = useState({
-    name: "",
-    username: "",
-    email: "",
-    phone: "",
+  const [products, setUser] = useState({
+    title: "",
+    image: "",
+    description: "",  
+    price: "",
+    category:"",
    
   });
 
-  const { name, username, email, phone} = user;
+  const { title, image, description, price,category} = products;
   const onInputChange = e => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setUser({ ...products, [e.target.name]: e.target.value });
   };
 
   useEffect(() => {
-    loadUser();
+    loadProducts();
   }, []);
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.put(`http://localhost:3003/users/${id}`, user);
+    await axios.put(`http://localhost:3003/products/${id}`,products);
     history.push("/");
   };
 
-  const loadUser = async () => {
-    const result = await axios.get(`http://localhost:3003/users/${id}`);
+  const loadProducts = async () => {
+    const result = await axios.get(`http://localhost:3003/products/${id}`);
     setUser(result.data);
+   
   };
   return (
     <div className="container">
       <div className="w-75 mx-auto shadow p-5">
-        <h2 className="test">Edit A User</h2>
+        <h2 className="text-center mb-4">Edit A Product</h2>
         <form onSubmit={e => onSubmit(e)}>
-          <div className="form-group">
+        <div className="form-group">
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Name"
-              name="name"
-              value={name}
+              placeholder="Enter image Products"
+              name="title"
+              value={title}
               onChange={e => onInputChange(e)}
             />
           </div>
@@ -51,19 +53,19 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Username"
-              name="username"
-              value={username}
+              placeholder="Enter image Products"
+              name="image"
+              value={image}
               onChange={e => onInputChange(e)}
             />
           </div>
           <div className="form-group">
             <input
-              type="email"
+              type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your E-mail Address"
-              name="email"
-              value={email}
+              placeholder="Enter description products"
+              name="description"
+              value={description}
               onChange={e => onInputChange(e)}
             />
           </div>
@@ -72,17 +74,27 @@ const EditUser = () => {
               type="text"
               className="form-control form-control-lg"
               placeholder="Enter Your Phone Number"
-              name="phone"
-              value={phone}
+              name="price"
+              value={price}
+              onChange={e => onInputChange(e)}
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="text"
+              className="form-control form-control-lg"
+              placeholder="Enter Your Phone Number"
+              name="category"
+              value={category}
               onChange={e => onInputChange(e)}
             />
           </div>
          
-          <button className="btn btn-warning btn-block">Update User</button>
+          <button className="btn btn-warning btn-block">Update Product</button>
         </form>
       </div>
     </div>
   );
 };
 
-export default EditUser;
+export default EditProduct;

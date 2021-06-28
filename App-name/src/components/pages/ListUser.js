@@ -18,14 +18,13 @@ const ListUser = () => {
   const deleteUser = async id => {
     await axios.delete(`http://localhost:3003/users/${id}`);
     loadUsers();
-   
   };
 
   return (
     <div className="container">
        
       <div className="py-4">
-        <h1>Home Page</h1>
+        <h1 className="test">Home Page</h1>
         <table class="table border shadow">
           <thead class="thead-dark">
             <tr>

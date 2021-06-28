@@ -1,34 +1,133 @@
 {
   "users": [
     {
-      "name": "sssssssssss",
-      "username": "aaaaaaaaaaaa",
-      "email": "a@gmail.com",
-      "phone": "1111111111111111",
-      "website": "111111111111111",
-      "id": 8
-    },
-    {
-      "name": "Trườngkutebaby",
-      "username": "truong",
-      "email": "truongpx.10.student@fit.tdc.edu.vn",
-      "phone": "0373658707",
-      "website": "Webng",
-      "id": 9
-    },
-    {
-      "name": "hiihi",
-      "username": "dsfdsf",
-      "email": "a@gmail.com",
+      "name": "Hoanghuuulong",
+      "username": "123455",
+      "email": "hoanghuulong.krn@gmail.com",
       "phone": "dsfsdfsdfsfsd",
-      "id": 10
+      "id": 1
     },
     {
-      "name": "fdsfsdfsd",
+      "name": "hoanghuulong",
       "username": "hoanghuulong",
-      "email": "fsdfds2@mail.com",
+      "email": "hndfsdnf@gmail.com",
+      "phone": "dsfsdfsdfsdf",
+      "id": 2
+    },
+    {
+      "name": "hoanghuulong",
+      "username": "hoanghuulong",
+      "email": "hndfsdnf@gmail.com",
+      "phone": "dsfsdfsdfsdf",
+      "id": 3
+    },
+    {
+      "name": "Phạm Xuân Trường",
+      "username": "truongpham",
+      "password": "123",
+      "email": "hoanghuulong.krn@gmail.com",
+      "phone": "01657133344",
+      "id": 4
+    },
+    {
+      "name": "hoang",
+      "username": "19211tt3521",
+      "password": "111",
+      "email": "111@gmail.com",
       "phone": "dsfsdfsdfsfsd",
-      "id": 11
+      "id": 5
+    },
+    {
+      "name": "hoang",
+      "username": "19211tt3521",
+      "password": "111",
+      "email": "111@gmail.com",
+      "phone": "1111",
+      "id": 6
+    },
+    {
+      "name": "hoang",
+      "username": "19211tt3521",
+      "password": "111",
+      "email": "111@gmail.com",
+      "phone": "111111",
+      "id": 7
+    },
+    {
+      "name": "sâsass",
+      "username": "sasas",
+      "email": "sasa@gmail.com",
+      "password": "11111",
+      "phone": "0127238728",
+      "id": 8
     }
-  ]
+  ],
+  "login": [
+    {
+      "username": "19211tt3521",
+      "password": "111",
+      "id": 1
+    },
+    {
+      "username": "19211tt3521",
+      "password": "111",
+      "id": 2
+    },
+    {
+      "username": "19211tt3521",
+      "password": "111",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": "ip11",
+      "title": "Iphone 11",
+      "image": "/images/iphone11.jpg",
+      "description": "Iphone 11, trong đó phiên bản iPhone 11 64GB có mức giá rẻ nhất nhưng vẫn được nâng cấp mạnh mẽ như iPhone Xr ra mắt trước đó.",
+      "price": "20",
+      "category": [
+        "Iphone"
+      ]
+    },
+    {
+      "id": "sam1",
+      "title": "Samsung Galaxy Note 20U",
+      "image": "/images/sam1.jpg",
+      "description": "Sau Galaxy Note 20 thì Galaxy Note 20 Ultra là phiên bản tiếp theo cao cấp hơn thuộc dòng Note 20 Series của Samsung, với nhiều thay đổi, từ cụm camera hỗ trợ lấy nét laser AF cùng ống kính góc rộng mới, màn hình tràn viền lên đến 6.9 inch.",
+      "price": "20",
+      "category": [
+        "Samsung"
+      ]
+    },
+    {
+      "id": "oppo1",
+      "title": "OPPO Find X3 Pro 5G",
+      "image": "/images/oppo1.jpg",
+      "description": "OPPO đã làm khuynh đảo thị trường smartphone khi cho ra đời chiếc điện thoại OPPO Find X3 Pro 5G. Đây là một sản phẩm có thiết kế độc đáo, sở hữu cụm camera khủng, cấu hình thuộc top đầu trong thế giới Android.",
+      "price": "20",
+      "category": [
+        "Oppo"
+      ]
+    },
+    {
+      "id": "oppo2",
+      "title": "OPPO A74Pro",
+      "image": "/images/oppo2.jpg",
+      "description": "OPPO luôn đa dạng hoá các sản phẩm của mình từ giá rẻ cho đến cao cấp. Trong đó, điện thoại OPPO A74 4G được nằm trong phân khúc tầm trung rất đáng chú ý với nhiều tính năng và smartphone cũng chính là bản nâng cấp của OPPO A73 ra mắt trước đó.",
+      "price": "15",
+      "category": [
+        "Oppo"
+      ]
+    },
+    {
+      "title": "OPPO A74ProKKKKKK",
+      "image": "C:\\fakepath\\45a44278132eff70a63f.jpg",
+      "description": "kkkkkkkkk",
+      "price": "kkkkkkkkkkkkkk",
+      "category": "kkkkk",
+      "id": "2G69OK1"
+    }
+  ],
+  "carts": []
 }
