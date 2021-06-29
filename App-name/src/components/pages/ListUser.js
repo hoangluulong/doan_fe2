@@ -9,10 +9,14 @@ const ListUser = () => {
     loadUsers();
   }, []);
 
+  const loader = document.querySelector('#preloader');
   const loadUsers = async () => {
+    loader.style.opacity = "1";
     const result = await axios.get("http://localhost:3003/users");
     setUser(result.data.reverse());
     console.log(result);
+    loader.style.opacity = "0";
+    loader.style.zIndex = "-5";
   };
 
   const deleteUser = async id => {

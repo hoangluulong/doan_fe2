@@ -49,7 +49,6 @@ function App(props) {
           <Route exact path="/productlist" component={ProducList} />
         <Route exact path="/products/add" component={AddProducts} />
           <Route exact path="/products/edit/:id" component={EditProduct} />
-          <Route exact path="/products/:id" component={DetailProduct} />
           {/* __ */}
           <Route component={NotFound} />
         </Switch>

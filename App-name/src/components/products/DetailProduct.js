@@ -29,12 +29,11 @@ const DetailProduct = () => {
       <hr />
       <ul className="list-group w-50">
         <li className="list-group-item">Product title: {products.title}</li>
-        
-        {/* <li className="list-group-item">Product name: {products.image}</li> */}
-        <div className="list-group-item"> <img src={products.image} alt={products.title} className="card-img img-fluid" width={20} height={30} alt="" /> </div>
 
+        <div className="list-group-item"> <img src={products.image} alt={products.title} className="card-img img-fluid" width={20} height={30} alt="" /> </div>
         <li className="list-group-item">Product description: {products.description}</li>
         <li className="list-group-item">Product price: {products.price}</li>
+        <li className="list-group-item">Like: {products.like}</li>
         <li className="list-group-item">Product  category: {products.category}</li>
       </ul>
     </div>

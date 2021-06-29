@@ -16,7 +16,6 @@ const Navbar = () => {
     console.log(result);
 
   };
-  console.log(usersLogin.length);
 
   const deleteUser = async id => {
       await axios.delete(`http://localhost:3003/login/${id}`);

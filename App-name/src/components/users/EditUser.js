@@ -10,7 +10,6 @@ const EditUser = () => {
     username: "",
     email: "",
     phone: "",
-   
   });
 
   const { name, username, email, phone} = user;

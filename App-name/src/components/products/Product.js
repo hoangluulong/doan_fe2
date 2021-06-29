@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { useHistory, useParams } from "react-router-dom";
 
 const Product = () => {
+    const size = []
+    const sort = []
+
     const [products, setProduct] = useState([]);
     const [carts, setCarts] = useState([]);
     let history = useHistory();
@@ -17,11 +20,14 @@ const Product = () => {
         setProduct(result.data.reverse());
         console.log(result);
     };
+    const loader = document.querySelector('#preloader');
 
     const loadCarts = async () => {
+        loader.style.opacity = "1";
         const result = await axios.get("http://localhost:3003/carts");
         setCarts(result.data.reverse());
         console.log(result);
+        loader.style.opacity = "0";
     };
 
     const addToCart = async (product) => {
@@ -37,6 +43,24 @@ const Product = () => {
                 <div className="hinh1"><img src="./images/slide/s1.png" alt="slide1" /></div>
                 <div className="hinh2"><img src="./images/slide/s2.png" alt="slide2" /></div>
             </div>
+
+            {/* <div className="filter-sort">
+                Oder{""}
+                <select value={sort} onChange = {sortProducts}>
+                    <option>Latest</option>
+                    <option value="Lowest">Lowest</option>
+                    <option value="heigeht">Heighest</option>
+                </select>
+            </div>
+
+            <div className="filter-size">
+                Filter{""}
+                <select value={size} onChange = {filterProduct}>
+                    <option>Latest</option>
+                    <option value="Lowest">Lowest</option>
+                    <option value="heigeht">Heighest</option>
+                </select>
+            </div> */}
 
             <div className="container d-flex justify-content-center mt-50 mb-50">
                 <div className="row">

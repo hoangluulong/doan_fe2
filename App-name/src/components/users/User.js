@@ -15,8 +15,11 @@ const User = () => {
     loadUser();
   
   }, []);
+  const loader = document.querySelector('#preloader');
   const loadUser = async () => {
+    loader.style.opacity = "1";
     const res = await axios.get(`http://localhost:3003/users/${id}`);
+    loader.style.opacity = "0";
     setUser(res.data);
   };
   return (

@@ -1,82 +1,19 @@
 {
   "users": [
     {
-      "name": "Hoanghuuulong",
-      "username": "123455",
-      "email": "hoanghuulong.krn@gmail.com",
-      "phone": "dsfsdfsdfsfsd",
-      "id": 1
-    },
-    {
-      "name": "hoanghuulong",
-      "username": "hoanghuulong",
-      "email": "hndfsdnf@gmail.com",
-      "phone": "dsfsdfsdfsdf",
-      "id": 2
-    },
-    {
-      "name": "hoanghuulong",
-      "username": "hoanghuulong",
-      "email": "hndfsdnf@gmail.com",
-      "phone": "dsfsdfsdfsdf",
-      "id": 3
-    },
-    {
       "name": "Phạm Xuân Trường",
       "username": "truongpham",
       "password": "123",
       "email": "hoanghuulong.krn@gmail.com",
       "phone": "01657133344",
       "id": 4
-    },
-    {
-      "name": "hoang",
-      "username": "19211tt3521",
-      "password": "111",
-      "email": "111@gmail.com",
-      "phone": "dsfsdfsdfsfsd",
-      "id": 5
-    },
-    {
-      "name": "hoang",
-      "username": "19211tt3521",
-      "password": "111",
-      "email": "111@gmail.com",
-      "phone": "1111",
-      "id": 6
-    },
-    {
-      "name": "hoang",
-      "username": "19211tt3521",
-      "password": "111",
-      "email": "111@gmail.com",
-      "phone": "111111",
-      "id": 7
-    },
-    {
-      "name": "sâsass",
-      "username": "sasas",
-      "email": "sasa@gmail.com",
-      "password": "11111",
-      "phone": "0127238728",
-      "id": 8
     }
   ],
   "login": [
     {
-      "username": "19211tt3521",
-      "password": "111",
+      "username": "truongpham",
+      "password": "123",
       "id": 1
-    },
-    {
-      "username": "19211tt3521",
-      "password": "111",
-      "id": 2
-    },
-    {
-      "username": "19211tt3521",
-      "password": "111",
-      "id": 3
     }
   ],
   "products": [
@@ -88,7 +25,8 @@
       "price": "20",
       "category": [
         "Iphone"
-      ]
+      ],
+      "like": 0
     },
     {
       "id": "sam1",
@@ -98,7 +36,8 @@
       "price": "20",
       "category": [
         "Samsung"
-      ]
+      ],
+      "like": 22
     },
     {
       "id": "oppo1",
@@ -108,7 +47,8 @@
       "price": "20",
       "category": [
         "Oppo"
-      ]
+      ],
+      "like": 0
     },
     {
       "id": "oppo2",
@@ -118,16 +58,15 @@
       "price": "15",
       "category": [
         "Oppo"
-      ]
-    },
-    {
-      "title": "OPPO A74ProKKKKKK",
-      "image": "C:\\fakepath\\45a44278132eff70a63f.jpg",
-      "description": "kkkkkkkkk",
-      "price": "kkkkkkkkkkkkkk",
-      "category": "kkkkk",
-      "id": "2G69OK1"
+      ],
+      "like": 16
     }
   ],
-  "carts": []
+  "carts": [],
+  "like": [
+    {
+      "user_id": 4,
+      "product_id": "oppo2"
+    }
+  ]
 }

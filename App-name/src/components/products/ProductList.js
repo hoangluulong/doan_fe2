@@ -8,17 +8,18 @@ const ProducList = () => {
   useEffect(() => {
     loadProducts();
   }, []);
-
+  const loader = document.querySelector('#preloader');
   const loadProducts = async () => {
+    loader.style.opacity = "1";
     const result = await axios.get("http://localhost:3003/products");
     setUser(result.data.reverse());
     console.log(result);
+    loader.style.opacity = "0";
   };
 
   const deleteProducts = async id => {
   await axios.delete(`http://localhost:3003/products/${id}`);
   loadProducts();
-
   };
 
   return (
